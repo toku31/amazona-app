@@ -5,10 +5,10 @@ import HomeScreen from './screens/HomeScreen';
 function App() {
   return (
     <BrowserRouter >
-    <div class="grid-container">
-        <header class="row">
+    <div className="grid-container">
+        <header className="row">
           <div>
-            <a class="brand" href="/">amazona</a>
+            <a className="brand" href="/">amazona</a>
           </div>
           <div>
             <a href="/cart">Cart</a>
@@ -19,7 +19,7 @@ function App() {
           <Route path='/product/:id' component={ProductScreen} ></Route>
           <Route path='/' component={HomeScreen} exact ></Route>
         </main>
-        <footer class = "row center">
+        <footer className = "row center">
             All right reserved
         </footer>
     </div>
