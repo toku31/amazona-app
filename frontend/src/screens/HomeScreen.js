@@ -5,7 +5,7 @@ import data from '../data'
 export default function HomeScreen() {
   return (
     <div>
-      <div class="row center">
+      <div className="row center">
         {data.products.map((product)=>(
           <Product key={product._id} product={product} ></Product>
         ))}
