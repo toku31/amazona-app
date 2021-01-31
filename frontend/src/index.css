@@ -1,8 +1,8 @@
 html {
-  font-size: 62.5%;  /* 16px X 62.5% = 10px = 1rem  */
+  font-size: 62.5%; /* 16px X 62.5% = 10px = 1rem  */
 }
 
-body{
+body {
   margin: 0;
   height: 100vh;
   font-size: 1.6rem;
@@ -15,7 +15,7 @@ body{
 }
 
 /* Layout */
-.grid-container{
+.grid-container {
   display: grid;
   grid-template-areas:
     'header'
@@ -25,18 +25,18 @@ body{
   grid-template-rows: 5rem 1fr 5rem;
   height: 100%;
 }
-header{
+header {
   grid-area: header;
-  background-color: #203040;;
+  background-color: #203040;
 }
-main{
+main {
   grid-area: main;
   padding: 1rem;
 }
-footer{
+footer {
   grid-area: footer;
   background-color: #203040;
-  color: #ffffff
+  color: #ffffff;
 }
 /* Common */
 h1 {
@@ -80,13 +80,13 @@ button {
 input:hover,
 select:hover,
 textarea:hover,
-button:hover{
+button:hover {
   border: 0.1rem #404040 solid;
 }
-button.primary{
+button.primary {
   background-color: #f0c040;
 }
-button.block{
+button.block {
   width: 100%;
 }
 /* Header */
@@ -129,7 +129,7 @@ a.brand {
   min-width: 30rem;
 }
 /* Image */
-img{
+img {
   border-radius: 0.5rem;
 }
 img.small {
@@ -141,7 +141,7 @@ img.medium {
   width: 100%;
 }
 /* 画面が大きくなったとき */
-img.large {   
+img.large {
   width: 100%;
 }
 
@@ -155,7 +155,7 @@ img.large {
 .card-body {
   padding: 1rem;
 }
-.card-body > *{
+.card-body > * {
   margin-bottom: 0.5rem;
 }
 .price {
@@ -174,23 +174,27 @@ img.large {
   display: block !important;
 }
 .success {
-  color: #20a020
+  color: #20a020;
 }
 .error {
-  color: #a02020
+  color: #a02020;
 }
 .alert {
   padding: 1rem;
   border: 0.1rem solid transparent;
   border-radius: 0.5rem;
 }
-.alert-info{
+.alert-info {
   color: #2020a0;
   background-color: #e0e0ff;
 }
-.alert-danger{
+.alert-danger {
   color: #a02020;
   background-color: #ffe0e0;
+}
+.alert-success {
+  color: #20a020;
+  background-color: #eeffe0;
 }
 
 /* Form */
@@ -206,16 +210,16 @@ img.large {
 }
 .form label {
   margin: 1rem 0;
-  display: block;
+  /* display: block; */
 }
 
 /* Dropdown */
 .dropdown {
-  display:inline-block;
+  display: inline-block;
   position: relative;
 }
 .dropdown-content {
-  position:absolute;
+  position: absolute;
   display: none;
   right: 0;
   min-width: 12rem;
@@ -227,6 +231,19 @@ img.large {
   border-radius: 0.5rem;
 }
 
-.dropdown:hover  .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
+}
+
+/* Checkout Steps */
+.checkout-steps > div {
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+.checkout-steps > div.active {
+  border-top: 0.3rem #f08000 solid;
+  color: #f08000;
 }
