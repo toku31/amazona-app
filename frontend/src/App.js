@@ -8,6 +8,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import SigninScreen from './screens/SigninScreen';
 import { signout } from './actions/userActions';
 import RegisterScreen from './screens/RegisterScreen';
+import ShippingAddressScreen from './screens/ShippingAddressScreen';
+import PaymentMethodScreen from './screens/PaymentMethodScreen';
+import PlaceOrderScreen from './screens/PlaceOrderScreen';
+import OrderScreen from './screens/OrderScreen';
 
 function App() {
   const cart = useSelector(state => state.cart);
@@ -50,6 +54,10 @@ function App() {
           <Route path='/product/:id' component={ProductScreen} ></Route>
           <Route path='/signin' component={SigninScreen} ></Route>
           <Route path='/register' component={RegisterScreen} ></Route>
+          <Route path='/shipping' component={ShippingAddressScreen} ></Route>
+          <Route path='/payment' component={PaymentMethodScreen} ></Route>
+          <Route path='/placeorder' component={PlaceOrderScreen} ></Route>
+          <Route path='/order/:id' component={OrderScreen} ></Route>
           <Route path='/' component={HomeScreen} exact ></Route>
         </main>
         <footer className = "row center">
