@@ -5,7 +5,7 @@ import {
   USER_REGISTER_SUCCESS, 
   USER_SIGNIN_FAIL, 
   USER_SIGNIN_REQUEST, 
-  USER_SIGNIN_SIGNOUT, 
+  USER_SIGNOUT, 
   USER_SIGNIN_SUCCESS,
   USER_DETAILS_REQUEST,
   USER_DETAILS_SUCCESS,
@@ -51,7 +51,7 @@ export const signout = () => (dispatch) => {
   localStorage.removeItem('userInfo');
   localStorage.removeItem('cartItems');
   localStorage.removeItem('shippingAddress');
-  dispatch({ type: USER_SIGNIN_SIGNOUT});
+  dispatch({ type: USER_SIGNOUT});
 }
 
 export const detailsUser = (userId) => async (dispatch, getstate) => {

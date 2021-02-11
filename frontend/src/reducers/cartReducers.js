@@ -6,7 +6,7 @@ import {
   CART_SAVE_SHIPPING_ADDRESS } from "../constants/cartConstants";
 
 
-export const cartReduer = (state = { cartItems:[]}, action) => {
+export const cartReducer = (state = { cartItems:[]}, action) => {
   switch(action.type) {
     case CART_ADD_ITEM:
       const item = action.payload;
